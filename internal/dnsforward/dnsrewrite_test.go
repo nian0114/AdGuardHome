@@ -22,7 +22,7 @@ func TestServer_FilterDNSRewrite(t *testing.T) {
 		Preference: 32,
 	}
 	svcbVal := &rules.DNSSVCB{
-		Params:   map[string]string{"alpn": "h3"},
+		Params:   map[string]string{"alpn": "h3", "dohpath": "/dns-query"},
 		Target:   dns.Fqdn(domain),
 		Priority: 32,
 	}
@@ -167,7 +167,9 @@ func TestServer_FilterDNSRewrite(t *testing.T) {
 		require.True(t, ok)
 
 		assert.Equal(t, dns.SVCB_ALPN, ans.Value[0].Key())
+		assert.Equal(t, dns.SVCB_ALPN, ans.Value[1].Key())
 		assert.Equal(t, svcbVal.Params["alpn"], ans.Value[0].String())
+		assert.Equal(t, svcbVal.Params["dohpath"], ans.Value[1].String())
 		assert.Equal(t, svcbVal.Target, ans.Target)
 		assert.Equal(t, svcbVal.Priority, ans.Priority)
 	})
@@ -187,7 +189,9 @@ func TestServer_FilterDNSRewrite(t *testing.T) {
 
 		require.True(t, ok)
 		assert.Equal(t, dns.SVCB_ALPN, ans.Value[0].Key())
+		assert.Equal(t, dns.SVCB_ALPN, ans.Value[1].Key())
 		assert.Equal(t, svcbVal.Params["alpn"], ans.Value[0].String())
+		assert.Equal(t, svcbVal.Params["dohpath"], ans.Value[1].String())
 		assert.Equal(t, svcbVal.Target, ans.Target)
 		assert.Equal(t, svcbVal.Priority, ans.Priority)
 	})
