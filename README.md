@@ -356,7 +356,7 @@ This software wouldn't have been possible without:
    * [miekg's dns](https://github.com/miekg/dns)
    * [go-yaml](https://github.com/go-yaml/yaml)
    * [service](https://godoc.org/github.com/kardianos/service)
-   * [dnsproxy](https://github.com/AdguardTeam/dnsproxy)
+   * [dnsproxy](https://github.com/nian0114/dnsproxy)
    * [urlfilter](https://github.com/AdguardTeam/urlfilter)
  * [Node.js](https://nodejs.org/) and its libraries:
    * [React.js](https://reactjs.org)

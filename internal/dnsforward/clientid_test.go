@@ -7,7 +7,7 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/AdguardTeam/dnsproxy/proxy"
+	"github.com/nian0114/dnsproxy/proxy"
 	"github.com/AdguardTeam/golibs/testutil"
 	"github.com/lucas-clemente/quic-go"
 	"github.com/stretchr/testify/assert"

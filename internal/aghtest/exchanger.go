@@ -1,7 +1,7 @@
 package aghtest
 
 import (
-	"github.com/AdguardTeam/dnsproxy/upstream"
+	"github.com/nian0114/dnsproxy/upstream"
 	"github.com/miekg/dns"
 )
 

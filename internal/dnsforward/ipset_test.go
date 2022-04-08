@@ -4,7 +4,7 @@ import (
 	"net"
 	"testing"
 
-	"github.com/AdguardTeam/dnsproxy/proxy"
+	"github.com/nian0114/dnsproxy/proxy"
 	"github.com/miekg/dns"
 	"github.com/stretchr/testify/assert"
 )

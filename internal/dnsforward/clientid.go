@@ -6,7 +6,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/AdguardTeam/dnsproxy/proxy"
+	"github.com/nian0114/dnsproxy/proxy"
 	"github.com/AdguardTeam/golibs/errors"
 	"github.com/AdguardTeam/golibs/netutil"
 	"github.com/lucas-clemente/quic-go"

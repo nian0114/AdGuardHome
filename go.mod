@@ -3,7 +3,6 @@ module github.com/AdguardTeam/AdGuardHome
 go 1.17
 
 require (
-	github.com/AdguardTeam/dnsproxy v0.41.4
 	github.com/AdguardTeam/golibs v0.10.8
 	github.com/AdguardTeam/urlfilter v0.15.2
 	github.com/NYTimes/gziphandler v1.1.1
@@ -21,11 +20,12 @@ require (
 	github.com/mdlayher/netlink v1.5.0
 	github.com/mdlayher/raw v0.0.0-20211126142749-4eae47f3d54b
 	github.com/miekg/dns v1.1.48
+	github.com/nian0114/dnsproxy v0.42.2
 	github.com/satori/go.uuid v1.2.0
 	github.com/stretchr/testify v1.7.0
 	github.com/ti-mo/netfilter v0.4.0
 	go.etcd.io/bbolt v1.3.6
-	golang.org/x/crypto v0.0.0-20211215153901-e495a2d5b3d3
+	golang.org/x/crypto v0.0.0-20220315160706-3147a52a75dd
 	golang.org/x/net v0.0.0-20220403103023-749bd193bc2b
 	golang.org/x/sys v0.0.0-20220406163625-3f8b81556e12
 	gopkg.in/natefinch/lumberjack.v2 v2.0.0
@@ -46,7 +46,7 @@ require (
 	github.com/josharian/native v0.0.0-20200817173448-b6b71def0850 // indirect
 	github.com/marten-seemann/qtls-go1-16 v0.1.4 // indirect
 	github.com/marten-seemann/qtls-go1-17 v0.1.0 // indirect
-	github.com/marten-seemann/qtls-go1-18 v0.1.0-beta.1 // indirect
+	github.com/marten-seemann/qtls-go1-18 v0.1.0 // indirect
 	github.com/mdlayher/socket v0.1.1 // indirect
 	github.com/nxadm/tail v1.4.8 // indirect
 	github.com/onsi/ginkgo v1.16.5 // indirect
